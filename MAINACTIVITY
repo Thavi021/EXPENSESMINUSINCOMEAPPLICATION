@@ -1,0 +1,553 @@
+package com.example.budgetapplicationv1;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
+
+public class MainActivity extends AppCompatActivity{
+
+    private Button buttonSum;
+
+    private EditText TOTALINCOME;
+    private EditText TOTALEXPENSES;
+    private EditText IME;
+    private EditText IMEM;
+
+    private EditText months;
+
+    private EditText MonhtlyIncomeStreamAmount1;
+    private EditText MonhtlyIncomeStreamAmount2;
+    private EditText MonhtlyIncomeStreamAmount3;
+    private EditText MonhtlyIncomeStreamAmount4;
+    private EditText MonhtlyIncomeStreamAmount5;
+
+    private EditText tax;
+    private EditText paycheckdeductions;
+    private EditText savings;
+    private EditText investing;
+    private EditText debtrepayment;
+    private EditText rentandmorgagepayments;
+    private EditText utilities;
+
+    private EditText transportcosts;
+    private EditText groceriesandpersonal;
+    private EditText householdexpenses;
+    private EditText insurance;
+    private EditText subscriptions;
+    private EditText childcare;
+    private EditText petcare;
+
+    private EditText entertainment;
+    private EditText miscellaneous;
+
+
+    Integer Expenses;
+    Integer Income1;
+    Integer Income2;
+    Integer Income3;
+    Integer Income4;
+    Integer Income5;
+
+    Integer E1;
+    Integer E2;
+    Integer E3;
+    Integer E4;
+    Integer E5;
+    Integer E6;
+    Integer E7;
+    Integer E8;
+    Integer E9;
+    Integer E10;
+    Integer E11;
+    Integer E12;
+    Integer E13;
+    Integer E14;
+    Integer E15;
+    Integer E16;
+    Integer M;
+
+    Integer TotalIncome;
+    Integer TotalExpenses;
+    Integer IncomeMinusExpenses;
+    Integer IncomeMinusExpensesXmonths;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+
+//SUBMIT BUTTON
+        buttonSum = (Button) findViewById(R.id.button1);
+
+//INCOME
+
+        MonhtlyIncomeStreamAmount1 = (EditText) findViewById(R.id.MonhtlyIncomeStreamAmount1);
+        MonhtlyIncomeStreamAmount2 = (EditText) findViewById(R.id.MonhtlyIncomeStreamAmount2);
+        MonhtlyIncomeStreamAmount3 = (EditText) findViewById(R.id.MonhtlyIncomeStreamAmount3);
+        MonhtlyIncomeStreamAmount4 = (EditText) findViewById(R.id.MonhtlyIncomeStreamAmount4);
+        MonhtlyIncomeStreamAmount5 = (EditText) findViewById(R.id.MonhtlyIncomeStreamAmount5);
+
+        //EXPENSES
+
+        tax = (EditText) findViewById(R.id.tax);;
+        paycheckdeductions = (EditText) findViewById(R.id.paycheckdeductions);
+        savings= (EditText) findViewById(R.id.savings);
+        investing= (EditText) findViewById(R.id.investing);
+        debtrepayment= (EditText) findViewById(R.id.debtrepayment);
+        rentandmorgagepayments= (EditText) findViewById(R.id.rentandmorgagepayments);
+        utilities= (EditText) findViewById(R.id.utilities);
+
+        transportcosts= (EditText) findViewById(R.id.transportcosts);
+        groceriesandpersonal= (EditText) findViewById(R.id.groceriesandpersonal);
+        householdexpenses = (EditText) findViewById(R.id.householdexpenses);
+        insurance= (EditText) findViewById(R.id.insurance);
+        subscriptions= (EditText) findViewById(R.id.subscriptions);
+        childcare= (EditText) findViewById(R.id.childcare);
+        petcare= (EditText) findViewById(R.id.petcare);
+
+        entertainment= (EditText) findViewById(R.id.entertainment);
+        miscellaneous = (EditText) findViewById(R.id.miscellaneous);
+
+
+      months= (EditText) findViewById(R.id.months);
+
+       TOTALINCOME = (EditText) findViewById(R.id.TOTALINCOME);
+       TOTALEXPENSES = (EditText) findViewById(R.id.TOTALEXPENSE);
+       IME = (EditText) findViewById(R.id.IME);
+       IMEM = (EditText) findViewById(R.id.IMEM);
+
+
+        buttonSum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //Income1 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount1.getText()));
+
+                if
+                (MonhtlyIncomeStreamAmount1.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Monthly income stream 1 is null.", Toast.LENGTH_SHORT).show();
+                    MonhtlyIncomeStreamAmount1.setText("0");
+                    Income1 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount1.getText()));
+
+                }
+                else
+                {
+                    Income1 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount1.getText()));
+                }
+
+                if
+                (MonhtlyIncomeStreamAmount2.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Monthly income stream 2 is null.", Toast.LENGTH_SHORT).show();
+                    MonhtlyIncomeStreamAmount2.setText("0");
+                    Income2 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount2.getText()));
+
+                }
+                else
+                {
+                    Income2 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount2.getText()));
+
+                }
+                if
+                (MonhtlyIncomeStreamAmount3.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Monthly income stream 3 is null.", Toast.LENGTH_SHORT).show();
+                    MonhtlyIncomeStreamAmount3.setText("0");
+                    Income3 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount3.getText()));
+
+                }
+                else
+                {
+                    Income3 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount3.getText()));
+
+                }
+
+                if
+                (MonhtlyIncomeStreamAmount4.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Monthly income stream 4 is null.", Toast.LENGTH_SHORT).show();
+                    MonhtlyIncomeStreamAmount4.setText("0");
+                    Income4 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount4.getText()));
+
+                }
+                else
+                {
+                    Income4 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount4.getText()));
+
+                }
+                if
+                (MonhtlyIncomeStreamAmount5.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Monthly income stream 5 is null.", Toast.LENGTH_SHORT).show();
+                    MonhtlyIncomeStreamAmount5.setText("0");
+                    Income5 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount5.getText()));
+
+                }
+                else
+                {
+                    Income5 = Integer.parseInt(String.valueOf(MonhtlyIncomeStreamAmount5.getText()));
+
+                }
+//expenses--------------------------------------------------------------
+                if
+                (tax.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Tax expense is null.", Toast.LENGTH_SHORT).show();
+                    tax.setText("0");
+                    E1 = Integer.parseInt(String.valueOf(tax.getText()));
+
+                }
+                else
+                {
+                    E1 = Integer.parseInt(String.valueOf(tax.getText()));
+
+                }
+
+
+
+                if
+                (paycheckdeductions.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Paycheck deductions expense is null.", Toast.LENGTH_SHORT).show();
+                    paycheckdeductions.setText("0");
+                    E2 = Integer.parseInt(String.valueOf(paycheckdeductions.getText()));
+
+                }
+                else
+                {
+                    E2 = Integer.parseInt(String.valueOf(paycheckdeductions.getText()));
+
+                }
+
+                if
+                (savings.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Saving expense is null.", Toast.LENGTH_SHORT).show();
+                    savings.setText("0");
+                    E3 = Integer.parseInt(String.valueOf(savings.getText()));
+
+                }
+                else
+                {
+                    E3 = Integer.parseInt(String.valueOf(savings.getText()));
+
+                }
+
+                if
+                (investing.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Investing expense is null.", Toast.LENGTH_SHORT).show();
+                    investing.setText("0");
+                    E4 = Integer.parseInt(String.valueOf(investing.getText()));
+
+                }
+                else
+                {
+                    E4 = Integer.parseInt(String.valueOf(investing.getText()));
+
+                }
+
+                if
+                (debtrepayment.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Debt repayment expense is null.", Toast.LENGTH_SHORT).show();
+                    debtrepayment.setText("0");
+                    E5 = Integer.parseInt(String.valueOf(debtrepayment.getText()));
+
+                }
+                else
+                {
+                    E5 = Integer.parseInt(String.valueOf(debtrepayment.getText()));
+
+                }
+
+                if
+                (rentandmorgagepayments.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Rent and mortgage expense is null.", Toast.LENGTH_SHORT).show();
+                    rentandmorgagepayments.setText("0");
+                    E6 = Integer.parseInt(String.valueOf(rentandmorgagepayments.getText()));
+
+                }
+                else
+                {
+                    E6 = Integer.parseInt(String.valueOf(rentandmorgagepayments.getText()));
+
+                }
+
+                if
+                (utilities.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Utilities expense is null.", Toast.LENGTH_SHORT).show();
+                    utilities.setText("0");
+                    E7 = Integer.parseInt(String.valueOf(utilities.getText()));
+
+                }
+                else
+                {
+                    E7 = Integer.parseInt(String.valueOf(utilities.getText()));
+
+                }
+
+                if
+                (transportcosts.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Transport is null.", Toast.LENGTH_SHORT).show();
+                    transportcosts.setText("0");
+                    E8 = Integer.parseInt(String.valueOf(transportcosts.getText()));
+
+                }
+                else
+                {
+                    E8 = Integer.parseInt(String.valueOf(transportcosts.getText()));
+
+                }
+
+                if
+                (groceriesandpersonal.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Groceries and personal expense is null.", Toast.LENGTH_SHORT).show();
+                    groceriesandpersonal.setText("0");
+                    E9 = Integer.parseInt(String.valueOf(groceriesandpersonal.getText()));
+
+                }
+                else
+                {
+                    E9 = Integer.parseInt(String.valueOf(groceriesandpersonal.getText()));
+
+                }
+
+                if
+                (householdexpenses.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "House hold expense is null.", Toast.LENGTH_SHORT).show();
+                    householdexpenses.setText("0");
+                    E10 = Integer.parseInt(String.valueOf(householdexpenses.getText()));
+
+                }
+                else
+                {
+                    E10 = Integer.parseInt(String.valueOf(householdexpenses.getText()));
+
+                }
+
+                if
+                (insurance.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Insurance expense is null.", Toast.LENGTH_SHORT).show();
+                    insurance.setText("0");
+                    E11 = Integer.parseInt(String.valueOf(insurance.getText()));
+
+                }
+                else
+                {
+                    E11 = Integer.parseInt(String.valueOf(insurance.getText()));
+
+                }
+
+                if
+                (subscriptions.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Subscription expense is null.", Toast.LENGTH_SHORT).show();
+                    subscriptions.setText("0");
+                    E12 = Integer.parseInt(String.valueOf(subscriptions.getText()));
+
+                }
+                else
+                {
+                    E12 = Integer.parseInt(String.valueOf(subscriptions.getText()));
+
+                }
+
+                if
+                (childcare.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Child care expense is null.", Toast.LENGTH_SHORT).show();
+                    childcare.setText("0");
+                    E13 = Integer.parseInt(String.valueOf(childcare.getText()));
+
+                }
+                else
+                {
+                    E13 = Integer.parseInt(String.valueOf(childcare.getText()));
+
+                }
+
+                if
+                (petcare.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Pet care expense is null.", Toast.LENGTH_SHORT).show();
+                    petcare.setText("0");
+                    E14 = Integer.parseInt(String.valueOf(petcare.getText()));
+
+                }
+                else
+                {
+                    E14 = Integer.parseInt(String.valueOf(petcare.getText()));
+
+                }
+
+                if
+                (entertainment.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Entertainment expense is null.", Toast.LENGTH_SHORT).show();
+                    entertainment.setText("0");
+                    E15 = Integer.parseInt(String.valueOf(entertainment.getText()));
+
+                }
+                else
+                {
+                    E15 = Integer.parseInt(String.valueOf(entertainment.getText()));
+
+                }
+
+                if
+                (miscellaneous.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "Miscellaneous expense is null.", Toast.LENGTH_SHORT).show();
+                    miscellaneous.setText("0");
+                    E16 = Integer.parseInt(String.valueOf(miscellaneous.getText()));
+
+                }
+                else
+                {
+                    E16 = Integer.parseInt(String.valueOf(miscellaneous.getText()));
+
+                }
+
+
+//Months
+                if
+                (months.getText ().toString ().trim ().length () == 0)
+                {
+                    Toast.makeText(MainActivity.this,
+                            "How many months did you budget for, if months is null the default value is 1 month.", Toast.LENGTH_SHORT).show();
+                    months.setText("1");
+                    M = Integer.parseInt(String.valueOf(months.getText()));
+
+                }
+                else
+                {
+                    M = Integer.parseInt(String.valueOf(months.getText()));
+
+                }
+
+
+//Calculation==============================================================
+               TotalIncome =Income1
+                       +Income2
+                       +Income3
+                       +Income4
+                       +Income5;
+
+                TotalExpenses =E1
+                        +E2
+                        +E3
+                        +E4
+                        +E5
+                        +E6
+                        +E7
+                        +E8
+                        +E9
+                        +E10
+                        +E11
+                        +E12
+                        +E13
+                        +E14
+                        +E15
+                        +E16;
+                IncomeMinusExpenses =
+                        (Income1
+                                +Income2
+                                +Income3
+                                +Income4
+                                +Income5)
+                                -(E1
+                                +E2
+                                +E3
+                                +E4
+                                +E5
+                                +E6
+                                +E7
+                                +E8
+                                +E9
+                                +E10
+                                +E11
+                                +E12
+                                +E13
+                                +E14
+                                +E15
+                                +E16);
+                IncomeMinusExpensesXmonths =
+                       M*((Income1
+                       +Income2
+                       +Income3
+                       +Income4
+                       +Income5)
+                       -(E1
+                       +E2
+                       +E3
+                       +E4
+                       +E5
+                               +E6
+                               +E7
+                               +E8
+                               +E9
+                               +E10
+                               +E11
+                               +E12
+                               +E13
+                               +E14
+                               +E15
+                               +E16));
+
+                TOTALINCOME.setText(TotalIncome.toString());
+                TOTALEXPENSES.setText(TotalExpenses.toString());
+                IME.setText(IncomeMinusExpenses.toString());
+                IMEM.setText(IncomeMinusExpensesXmonths.toString());
+
+            }
+        });
+
+    }
+
+
+}
