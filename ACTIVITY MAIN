@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+
+    tools:context=".MainActivity">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none"
+                android:text="ENTER INCOME PER MONTH :"
+                android:gravity="center_horizontal"
+                android:textColor="#F8F8F8"
+                android:textSize="40sp"
+                app:fontFamily="cursive" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:inputType="none"
+                    android:text="Monthly Income Sream 1: "
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL1"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="#F8F8F8"
+                    android:text="R" />
+
+                <EditText
+                    android:id="@+id/MonhtlyIncomeStreamAmount1"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:inputType="none"
+                    android:text="Monthly Income Stream 2: "
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL2"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="#F8F8F8"
+                    android:text="R" />
+
+                <EditText
+                    android:id="@+id/MonhtlyIncomeStreamAmount2"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:inputType="none"
+                    android:text="Monthly Income Stream 3: "
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL3"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="#F8F8F8"
+                    android:text="R" />
+
+                <EditText
+                    android:id="@+id/MonhtlyIncomeStreamAmount3"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:inputType="none"
+                    android:text="Monthly Income Stream 4: "
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL4"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="#F8F8F8"
+                    android:text="R" />
+
+                <EditText
+                    android:id="@+id/MonhtlyIncomeStreamAmount4"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName5"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:gravity="center_horizontal"
+                    android:inputType="none"
+                    android:text="Monthly Income Stream 5: "
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL5"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textColor="#F8F8F8"
+                    android:text="R" />
+
+                <EditText
+                    android:id="@+id/MonhtlyIncomeStreamAmount5"
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="none"
+                android:textSize="40sp"
+                android:text="ENTER EXPENSES :"
+                android:gravity="center_horizontal"
+
+                android:textColor="#F8F8F8"
+                app:fontFamily="cursive" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EXPENSETB1"
+                        android:layout_width="288dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:text="1. TAX :"
+                        android:textColor="#F8F8F8"
+                        app:fontFamily="sans-serif-smallcaps" />
+
+                    <EditText
+                        android:id="@+id/CURRENCYSYMBOL6"
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:text="R"
+                        android:textColor="#F8F8F8"/>
+
+                    <EditText
+                        android:id="@+id/tax"
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="0123456789."
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textColor="#F8F8F8"
+                        android:text="0"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB2"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="2. PAYCHECK DEDUCTIONS:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL7"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/paycheckdeductions"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB3"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="3. SAVING:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL8"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/savings"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB4"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="4. INVESTING:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL9"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/investing"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB5"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="5. DEBT REPAYMENT:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL10"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/debtrepayment"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB6"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="6. RENT AND MORTGAGE PAYMENTS :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL12"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8" />
+
+
+                <EditText
+                    android:id="@+id/rentandmorgagepayments"
+                    android:layout_width="174dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB7"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="7. UTILITIES :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBO15"
+                    android:layout_width="124dp"
+                    android:layout_height="57dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8" />
+
+                <EditText
+                    android:id="@+id/utilities"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB8"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="8. TRANSPORTATION COSTS :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBO16"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/transportcosts"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB9"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="9. GROCERIES AND PERSONAL CARE :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBO17"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/groceriesandpersonal"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB10"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="10 HOUSEHOLD EXPENSES :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBO18"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/householdexpenses"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB11"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="11. INSURANCE AND RELATED MEDICAL COSTS :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBO19"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/insurance"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB12"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="12. RECURRING SUBSCRIPTIONS:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL20"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/subscriptions"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB13"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="13. CHILD CARE :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL21"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/childcare"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB14"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="14. PET CARE :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL22"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/petcare"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB15"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="15. ENTERTAINMENT :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL23"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/entertainment"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EXPENSETB16"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="16. MISCELLANEOUS :"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL24"
+
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/miscellaneous"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    android:textColor="#F8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="Amount of months you want to calculate?"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/months"
+                    android:layout_width="285dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:text="1"
+                    android:textColor="#F8F8F8" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:inputType="none"
+                android:text="click this button after the completion of this form."
+                android:textColor="#F8F8F8" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate budget"
+                android:textColor="#F8F8F8"
+                android:textSize="40sp"
+                app:backgroundTint="#2196F3" />
+
+            <EditText
+                android:id="@+id/MONEYLEFTOVERHEADING"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:inputType="none"
+                android:text="SUMMARY"
+                android:textColor="#F8F8F8"
+                android:textSize="40sp"
+                app:fontFamily="cursive" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TOTALINCOMELABEL"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="TOTAL INCOME:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL25"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/TOTALINCOME"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="none"
+
+                    android:text="TOTAL INCOME"
+                    android:textColor="#000000"
+                    android:background="#03f94e"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TOTALEXPENSELABEL"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="TOTAL EXPENSE:"
+                    app:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL26"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/TOTALEXPENSE"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="none"
+
+                    android:text="TOTAL EXPENSE"
+                    android:textColor="#000000"
+                    android:background="#03f94e"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TOTALLEFTOVERLABEL"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="Income - Expenses x 1 MONTH:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL27"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/IME"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="none"
+
+                    android:text="Money Left Over"
+                    android:textColor="#000000"
+                    android:background="#03f94e"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/TOTALLEFTOVERAFTERMONTHSLABEL"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="Income - Expenses x MONTHS:"
+                    android:textColor="#F8F8F8"
+                    app:fontFamily="sans-serif-smallcaps" />
+
+                <EditText
+                    android:id="@+id/CURRENCYSYMBOL28"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="R"
+                    android:textColor="#F8F8F8"/>
+
+                <EditText
+                    android:id="@+id/IMEM"
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="none"
+
+                    android:text="Money Left Over"
+                    android:textColor="#000000"
+                    android:background="#03f94e"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
